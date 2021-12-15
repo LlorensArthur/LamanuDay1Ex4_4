@@ -20,6 +20,14 @@ for (int i = 1; i < numbers.Count; i++)
     result *= numbers[i];
 }
 Console.Write("Le résultat de la multiplication des nombres suivants : ");
+if (numbers.Count == 0)
+{
+    Console.Write("Vous n'avez pas rentré de nombres. Il faut 2 nombres minimum pour faire une multiplication.");
+}
+if (numbers.Count == 1)
+{
+    Console.Write("Vous n'avez rentré qu'un nombre. Il faut 2 nombres minimum pour faire une multiplication.");
+}
 for (int i = 0; i < numbers.Count; i++)
 {
     if (i == numbers.Count - 1)
