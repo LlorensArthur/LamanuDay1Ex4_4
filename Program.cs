@@ -32,7 +32,7 @@ else
     }
     else if (numbers.Count == 2)
     {
-        Console.Write($"Le résultat de la multiplication de numbers[{0}] et number[{1}] est {result}.");
+        Console.Write($"Le résultat de la multiplication de [{0}] et [{1}] est {result}.");
     }
     else
     {
