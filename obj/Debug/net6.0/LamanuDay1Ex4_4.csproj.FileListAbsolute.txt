@@ -12,3 +12,4 @@ C:\Users\arthu\source\repos\LamanuDay1Ex4_4\obj\Debug\net6.0\LamanuDay1Ex4_4.dll
 C:\Users\arthu\source\repos\LamanuDay1Ex4_4\obj\Debug\net6.0\ref\LamanuDay1Ex4_4.dll
 C:\Users\arthu\source\repos\LamanuDay1Ex4_4\obj\Debug\net6.0\LamanuDay1Ex4_4.pdb
 C:\Users\arthu\source\repos\LamanuDay1Ex4_4\obj\Debug\net6.0\LamanuDay1Ex4_4.genruntimeconfig.cache
+C:\Users\arthu\source\repos\LamanuDay1Ex4_4\obj\Debug\net6.0\LamanuDay1Ex4_4.csproj.AssemblyReference.cache

@@ -1,5 +1,5 @@
 ﻿Console.WriteLine("Ecrivez des nombres pour les multiplier ensemble. Pour écrire un nombre, tapez le nombre en chiffres et appuyez sur entrée. Quand vous avez fini, tapez STOP et appuyez sur entrée");
-List<int> numberList = new List<int>();
+List<int> numbers = new List<int>();
 string input = "";
 while(true)
 {
@@ -11,17 +11,24 @@ while(true)
     }
     else
     {
-        numberList.Add(int.Parse(input));
+        numbers.Add(int.Parse(input));
     }
 }
-int result = numberList[0];
-for (int i = 1; i < numberList.Count; i++)
+int result = numbers[0];
+for (int i = 1; i < numbers.Count; i++)
 {
-    result *= numberList[i];
+    result *= numbers[i];
 }
 Console.Write("Le résultat de la multiplication des nombres suivants : ");
-foreach (var item in numberList)
+for (int i = 0; i < numbers.Count; i++)
 {
-    Console.Write(item + ", ");
+    if (i == numbers.Count - 1)
+    {
+        Console.Write($"et {numbers[i]} ");
+    }
+    else
+    {
+        Console.Write($"{numbers[i]}, ");
+    }
 }
 Console.WriteLine($"est {result}");
