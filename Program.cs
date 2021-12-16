@@ -1,6 +1,8 @@
-﻿Console.WriteLine("Ecrivez des nombres pour les multiplier ensemble. Pour écrire un nombre, tapez le nombre en chiffres et appuyez sur entrée. Quand vous avez fini, tapez STOP et appuyez sur entrée");
-List<int> numbers = new List<int>();
+﻿List<int> numbers = new List<int>();
 string input = "";
+// Affichage des instructions
+Console.WriteLine("Ecrivez des nombres pour les multiplier ensemble. Pour écrire un nombre, tapez le nombre en chiffres et appuyez sur entrée. Quand vous avez fini, tapez STOP et appuyez sur entrée");
+// Boucle d'ajout de caractère par l'utilisateur
 while (true)
 {
     Console.WriteLine("Ecrivez un nombre.");
@@ -14,11 +16,12 @@ while (true)
         numbers.Add(int.Parse(input));
     }
 }
-
+// On vérifie si l'utilisateur n'a rien rentré
 if (numbers.Count == 0)
 {
     Console.Write("Vous n'avez pas rentré de nombres. Il faut 2 nombres minimum pour faire une multiplication.");
 }
+// On vérifie d'autres cas. Et sinon, on affiche le résultat
 else
 {
     int result = numbers[0];
